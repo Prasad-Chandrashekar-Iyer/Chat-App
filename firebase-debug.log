@@ -1,0 +1,27 @@
+[debug] [2023-02-14T15:12:54.217Z] ----------------------------------------------------------------------
+[debug] [2023-02-14T15:12:54.219Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ccpda\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-14T15:12:54.219Z] CLI Version:   11.16.1
+[debug] [2023-02-14T15:12:54.219Z] Platform:      win32
+[debug] [2023-02-14T15:12:54.220Z] Node Version:  v14.18.0
+[debug] [2023-02-14T15:12:54.220Z] Time:          Tue Feb 14 2023 20:42:54 GMT+0530 (India Standard Time)
+[debug] [2023-02-14T15:12:54.220Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-14T15:12:54.313Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-14T15:12:54.313Z] > authorizing via signed-in user (toster342@gmail.com)
+[debug] [2023-02-14T15:12:54.313Z] [iam] checking project chat-web-app-920f7 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2023-02-14T15:12:54.315Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-web-app-920f7:testIamPermissions [none]
+[debug] [2023-02-14T15:12:54.315Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-web-app-920f7:testIamPermissions x-goog-quota-user=projects/chat-web-app-920f7
+[debug] [2023-02-14T15:12:54.315Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-web-app-920f7:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-02-14T15:12:55.876Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-web-app-920f7:testIamPermissions 200
+[debug] [2023-02-14T15:12:55.876Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-web-app-920f7:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-02-14T15:12:55.877Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-920f7 [none]
+[debug] [2023-02-14T15:12:56.326Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-920f7 200
+[debug] [2023-02-14T15:12:56.326Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-920f7 {"projectId":"chat-web-app-920f7","projectNumber":"687538669484","displayName":"chat-web-app","name":"projects/chat-web-app-920f7","resources":{"hostingSite":"chat-web-app-920f7","realtimeDatabaseInstance":"chat-web-app-920f7-default-rtdb","storageBucket":"chat-web-app-920f7.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4c6456ac-865d-4e22-be18-8a9158e252ef"}
+[debug] [2023-02-14T15:12:56.327Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-920f7 [none]
+[debug] [2023-02-14T15:12:56.779Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-920f7 200
+[debug] [2023-02-14T15:12:56.780Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-web-app-920f7 {"projectId":"chat-web-app-920f7","projectNumber":"687538669484","displayName":"chat-web-app","name":"projects/chat-web-app-920f7","resources":{"hostingSite":"chat-web-app-920f7","realtimeDatabaseInstance":"chat-web-app-920f7-default-rtdb","storageBucket":"chat-web-app-920f7.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_4c6456ac-865d-4e22-be18-8a9158e252ef"}
+[info] 
+[info] === Deploying to 'chat-web-app-920f7'...
+[info] 
+[info] i  deploying database, hosting 
+[info] Running command: npm run build
